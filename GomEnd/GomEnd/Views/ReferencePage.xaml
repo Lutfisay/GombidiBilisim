@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:image="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             x:Class="GomEnd.Views.ReferencePage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="42"/>
+                    <RowDefinition Height="2"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image WidthRequest="40" Margin="10,0,0,0" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <Image Source="go.png"  HorizontalOptions="CenterAndExpand" Grid.Column="1" HeightRequest="90" Margin="0,4,0,0"/>
+                <StackLayout Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image WidthRequest="40" Margin="0,0,10,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <Label BackgroundColor="#bababa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                    Grid.Row="1" HeightRequest="2" Grid.ColumnSpan="3"/>
+            </Grid>
+            <cv:CarouselView Grid.Row="1" x:Name="ReferenceOne" ItemsSource="{Binding .}">
+                <cv:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Image  Source="{Binding RefURLStart}" Aspect="AspectFit"/>
+                    </DataTemplate>
+                </cv:CarouselView.ItemTemplate>
+            </cv:CarouselView>
+            <cv:CarouselView Grid.Row="2" x:Name="ReferenceTwo" ItemsSource="{Binding .}">
+                <cv:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Image  Source="{Binding RefURLEnd}" Aspect="AspectFit"/>
+                    </DataTemplate>
+                </cv:CarouselView.ItemTemplate>
+            </cv:CarouselView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2.0" package="com.gom.GombidiBusiness" android:installLocation="auto" android:versionCode="2">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application android:label="GomEnd.Android">
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyANym075Q3lINLbqa7w6_4Ca5yrEfB3nDU" />
+	</application>
+</manifest>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GomEnd.Views.WorkPage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source="go.png"  Aspect="AspectFit" Margin="10,10,10,10">
+                
+            </Image>
+
+            <Frame OutlineColor="Accent"
+           BackgroundColor="Transparent"
+           Padding="20, 20"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="Firma Adı: "/>
+                    <Entry Placeholder="Firmanızın Adını Yazınız" PlaceholderColor="#bababa" x:Name="ComName"/>
+                    <Label Text="Faaliyet Gösterdiğiniz Sektör: "/>
+                    <Entry Placeholder="Faaliyet Gösterdiğiniz Sektörü Belirtiniz" PlaceholderColor="#bababa" x:Name="ComSec"/>
+                    <Label Text="Yetkili Kişi: "/>
+                    <Entry Placeholder="Adınız ve Soyadınız" PlaceholderColor="#bababa" x:Name="ComAuth"/>
+                    <Label Text="Telefon Numarası"/>
+                    <Entry Placeholder="(554) 397 11 12" PlaceholderColor="#bababa" Keyboard="Numeric" x:Name="ComPhone"/>
+                    <Image Source="send.png" HeightRequest="50" WidthRequest="50">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+            </Frame>
+            <Frame OutlineColor="Accent"
+                   BackgroundColor="Transparent"
+                   Padding="20, 20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" Margin="5,15,5,5">
+
+                <StackLayout>
+                  <Label Text="Sizinle çalışmaktan mutluluk duyacağımızı belirtmek isteriz.."></Label>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

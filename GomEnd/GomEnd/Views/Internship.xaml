@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GomEnd.Views.Internship">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source="go.png"  Aspect="AspectFit" Margin="10,10,10,10">
+
+            </Image>
+
+            <Frame OutlineColor="Accent"
+                   BackgroundColor="Transparent"
+                   Padding="30,30"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="Adınız Soyadınız: "/>
+                    <Entry Placeholder="Adınızı Soyadınızı Yazınız" PlaceholderColor="#bababa" x:Name="InName"/>
+                    <Label Text="Okulunuzun Adı: "/>
+                    <Entry Placeholder="Mehmet Akif Ersoy Üniversitesi" PlaceholderColor="#bababa" x:Name="InSc"/>
+                    <Label Text="Bölümünüz: "/>
+                    <Entry Placeholder="Bilgisayar Proğramcılığı" PlaceholderColor="#bababa" x:Name="InCha"/>
+                    <Label Text="Telefon Numarası: "/>
+                    <Entry Placeholder="(554) 397 11 12" PlaceholderColor="#bababa" x:Name="InPhoneN" Keyboard="Numeric"/>
+                    <Image Source="send.png" HeightRequest="50" WidthRequest="50">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+            </Frame>
+            <Frame OutlineColor="Accent"
+                   BackgroundColor="Transparent"
+                   Padding="20, 20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" Margin="5,15,5,5">
+
+                <StackLayout>
+                    <Label Text="Bilgi birikimimiz size kılavuz olacaktır, sevgilerimizle.."></Label>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

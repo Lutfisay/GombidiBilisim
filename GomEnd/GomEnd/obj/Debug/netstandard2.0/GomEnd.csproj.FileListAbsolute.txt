@@ -1,0 +1,17 @@
+D:\Projeler\GomEnd\GomEnd\GomEnd\bin\Debug\netstandard2.0\GomEnd.deps.json
+D:\Projeler\GomEnd\GomEnd\GomEnd\bin\Debug\netstandard2.0\GomEnd.dll
+D:\Projeler\GomEnd\GomEnd\GomEnd\bin\Debug\netstandard2.0\GomEnd.pdb
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.csprojResolveAssemblyReference.cache
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.csproj.CoreCompileInputs.cache
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.App.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.AboutPage.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.ContactPage.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.EmployeePage.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.MainPage.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.ReferencePage.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.WorkPage.xaml.g.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.AssemblyInfoInputs.cache
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.AssemblyInfo.cs
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.dll
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.pdb
+D:\Projeler\GomEnd\GomEnd\GomEnd\obj\Debug\netstandard2.0\GomEnd.Views.Internship.xaml.g.cs

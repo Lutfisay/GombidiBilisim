@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GomEnd.Views.EmployeePage"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             BackgroundColor="Blue">
+    <ContentPage.Content>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition Height="2"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image WidthRequest="40" Margin="10,0,0,0"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                <Image Source="go.png"  HorizontalOptions="CenterAndExpand" Grid.Column="1" HeightRequest="90" Margin="0,4,0,0"/>
+                    <StackLayout Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image WidthRequest="40" Margin="0,0,10,0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <Label BackgroundColor="#bababa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                    Grid.Row="1" HeightRequest="2" Grid.ColumnSpan="3"/>
+                </Grid>
+                <TableView Intent="Data" Grid.Row="1" HasUnevenRows="True" IsEnabled="False">
+                <TableRoot>
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Start" Padding="30,5,5,5">
+                                <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <controls:CircleImage Source="oktay.jpg" Aspect="AspectFill"
+                                      WidthRequest="100" HeightRequest="100" BorderColor="#bababa" BorderThickness="5">
+                                    </controls:CircleImage>
+                                    <Label Text="OKTAY KUZU" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="Yazılım Geliştirici" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="oktaykuzu.com" VerticalOptions="Start" HorizontalOptions="Start"/>
+                                </StackLayout>
+                                <StackLayout Padding="90,5,30,5" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <controls:CircleImage Source="fatma.jpg" Aspect="AspectFill"
+                                      WidthRequest="100" HeightRequest="100" BorderColor="#bababa" BorderThickness="5">
+                                    </controls:CircleImage>
+                                    <Label Text="FATIMA KUZU" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="Yazılım Geliştirici" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="gombidi.com" VerticalOptions="Start" HorizontalOptions="Start"/>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Start" Padding="30,5,5,5">
+                                <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <controls:CircleImage Source="osman.jpg" Aspect="AspectFill"
+                                      WidthRequest="100" HeightRequest="100" BorderColor="#bababa" BorderThickness="5">
+                                    </controls:CircleImage>
+                                    <Label Text="M.OSMAN KAFTIOĞLU" VerticalOptions="Center" HorizontalOptions="Center" FontSize="12"/>
+                                    <Label Text="Reklam ve Pazarlama" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="osmankaftioglu.com" VerticalOptions="Start" HorizontalOptions="Start" FontSize="12"/>
+                                </StackLayout>
+                                <StackLayout Padding="90,5,30,5" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <controls:CircleImage Source="can.jpg" Aspect="AspectFill"
+                                      WidthRequest="100" HeightRequest="100" BorderColor="#bababa" BorderThickness="5">
+                                    </controls:CircleImage>
+                                    <Label Text="LÜTFİ CAN SAY" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="Yazılım Geliştirici" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="lutficansay.com" VerticalOptions="Start" HorizontalOptions="Start" />
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+                </TableView>
+            </Grid>
+        </ContentPage.Content>
+</ContentPage>

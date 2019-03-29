@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GomEnd.Views.ContactPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="42"/>
+                    <RowDefinition Height="2"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image WidthRequest="40" Margin="10,0,0,0" Source="icon4.png"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <Image Source="go.png"  HorizontalOptions="CenterAndExpand" Grid.Column="1" HeightRequest="90" Margin="0,4,0,0"/>
+                <StackLayout Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image WidthRequest="40" Margin="0,0,10,0" Source="call.jpg">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapCall_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <Label BackgroundColor="#bababa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                    Grid.Row="1" HeightRequest="2" Grid.ColumnSpan="3"/>
+            </Grid>
+
+            <TableView Intent="Form" Grid.Row="1">
+                <TableRoot>
+                    <TableSection Title="Partnerlik ve Staj Başvuru İşlemleri">
+                        <ImageCell ImageSource="workpartner.jpg" Text="Partnerlik Başvurusu" Tapped="WorkForward_Tap" TextColor="Black"/>
+                        <ImageCell ImageSource="stajyer.jpg" Text="Staj Başvurusu" TextColor="Black" Tapped="Cell_OnTapped"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
